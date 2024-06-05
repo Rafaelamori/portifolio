@@ -78,7 +78,15 @@
                     <a href="#">
                         <img src="./IMG/CSS.png" alt="CSS">
                     </a>
-                
+                <script>
+    // Adicione um listener para detectar alterações no estado do checkbox
+    document.getElementById("modo-noturno").addEventListener("change", function() {
+        // Se o checkbox estiver marcado, adicione uma classe ao body para ativar o modo noturno
+        if (this.checked) {
+            document.body.classList.add("modo-noturno-ativo");
+        } else {
+            // Se não, remova a classe para voltar ao modo dia
+            document.body.classList.remove("modo-noturno-ativo");
                
 </body>
 
